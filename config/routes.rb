@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   resources :projects
+
+  root 'pages#home'
 end
