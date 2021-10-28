@@ -9,4 +9,7 @@ class PagesController < ApplicationController
   def home
     @projects = Project.all
   end
+
+  def error
+  end
 end
