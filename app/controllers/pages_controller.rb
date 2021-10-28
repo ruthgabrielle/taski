@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
 
   def about
+    @title = "My new page"
   end
 
   def home
