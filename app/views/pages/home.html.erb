@@ -1,8 +1,3 @@
 <h1>Home Page</h1>
 
-<% @projects.each do |project| %>
-    <p> <strong> <%= project.title =%> </strong> </p>
-    <%# the igual sign is use to print something %>
-    <p>  <%= project.description =%> </p>
-
-<% end %>
+<%= render "shared/projects"%>

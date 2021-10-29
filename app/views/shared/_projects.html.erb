@@ -1,0 +1,7 @@
+<% @projects.each do |project| %>
+    <p> <strong> <%= project.title =%> </strong> </p>
+    <%# the igual sign is use to print something %>
+    <em>  <%= project.description =%> </em>  
+    <%= "| #{project.percent_complete}" if project.percent_complete %>
+
+<% end %>
