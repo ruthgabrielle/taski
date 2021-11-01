@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_27_163342) do
+ActiveRecord::Schema.define(version: 2021_11_01_140229) do
 
   create_table "projects", force: :cascade do |t|
     t.string "title"
@@ -20,4 +20,15 @@ ActiveRecord::Schema.define(version: 2021_10_27_163342) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.integer "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.boolean "completed"
+    t.index ["project_id"], name: "index_tasks_on_project_id"
+  end
+
+  add_foreign_key "tasks", "projects"
 end
