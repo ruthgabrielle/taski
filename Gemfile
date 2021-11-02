@@ -18,7 +18,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 # Handles File Upload
-gem 'carriewave'
+gem 'carrierwave'
 # Run different filters
 gem 'mini_magick', '~> 3.5.0'
 # API connect
