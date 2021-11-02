@@ -17,3 +17,10 @@
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
+
+
+<hr>
+
+<h2> Task for projects </h2>
+
+<%= link_to "Add a new Task", new_project_task_path(project_id: @project.id) %>
